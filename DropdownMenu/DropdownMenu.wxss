@@ -1,0 +1,19 @@
+.viewListItem{
+    padding: 50rpx;
+    display: flex; 
+    align-items: center;
+    transition: opacity .3s;
+    border-bottom-style: solid;
+    border-bottom-width: 10rpx;
+    border-bottom-color: rgb(0, 0, 0);
+    background-color: white;
+}
+  
+.viewListItemShow{
+    opacity: .2;
+}
+  
+.textListItem{
+    flex: 1;
+    font-size: 38rpx;
+}

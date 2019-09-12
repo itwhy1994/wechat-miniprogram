@@ -1,0 +1,8 @@
+<view class="intro">此项目记录了本人使用小程序中完成的一些小功能，如有需要欢迎使用和反馈建议</view>
+
+<view wx:for="{{strFunctionChooses}}" wx:for-index="iFunctionIndex" wx:key="">
+  <button id="{{iFunctionIndex}}" class="buttonFunction" type="primary" bindtap="bindtapList">
+    {{item}}
+  </button>
+</view>
+

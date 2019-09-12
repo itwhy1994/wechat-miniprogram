@@ -1,0 +1,20 @@
+<view wx:for="{{strFunctionChooses}}" wx:for-index="iFunctionIndex" wx:key="">
+  <view id="{{iFunctionIndex+1}}" class="viewListItem {{iFunctionChoose == iFunctionIndex+1 ? 'viewListItemShow' : ''}}" bindtap="bindtapList">
+    <text class="textListItem">{{item}}</text>
+  </view>
+
+  <block wx:if="{{iFunctionChoose == iFunctionIndex+1 && iFunctionChoose == 1}}">
+    <text>Function 1 show</text>
+  </block>
+
+  <block wx:elif="{{iFunctionChoose == iFunctionIndex+1 && iFunctionChoose == 2}}">
+    <text>Function 2 show</text>
+  </block>
+
+  <block wx:elif="{{iFunctionChoose == iFunctionIndex+1 && iFunctionChoose == 3}}">
+    <text>Function 3 show</text>
+  </block>
+
+  <block wx:else>
+  </block>
+</view>
